@@ -1,0 +1,171 @@
+@import './mixin.scss';
+
+html,
+body .app {
+  color: #333333;
+  font-family: Arial, Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background: #f8f8f8;
+}
+
+.noneData {
+  background-image: url('../Null.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 0px 50px 50px #f8f8f8;
+  opacity: 0.5;
+  width: 100vw;
+  height: 50vh;
+}
+.noneData-asset{
+  background-image: url('../Null.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 0px 50px 50px #f8f8f8;
+  opacity: 0.5;
+  width: 73vw;
+  height: 50vh;
+}
+
+.app-container {
+  padding-bottom: 50px;
+}
+.item-view {
+  margin-top: 1vh;
+  p {
+    margin: 0.5vh 0;
+    font-size: 12px;
+  }
+  .p1 {
+    width: 60vw;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .span1 {
+    font-size: 14px;
+  }
+  .span2 {
+    color: #00a04d;
+  }
+}
+.remind-span {
+  background: red;
+  width: 2.5vh;
+  height: 2.5vh;
+  border-radius: 2.5vh;
+  line-height: 2.5vh;
+  float: right;
+  margin-left: 10px;
+  color: white;
+  text-align: center;
+}
+// 新增按钮
+.button-new {
+  position: fixed;
+  right: 5vh;
+  bottom: 5vh;
+  height: 3vh;
+  width: 3vh;
+  border-radius: 5vh;
+  background: #9eea6a;
+  line-height: 5vh;
+  text-align: center;
+  padding: 2vh;
+  z-index: 1000;
+}
+.content-items {
+  padding: 0 2vw;
+  width: 96vw;
+  background: white;
+}
+// 物资项头
+.cell-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  span {
+    font-size: 12px;
+  }
+}
+
+//申请页
+.page-application {
+  background: #f8f8f8;
+}
+.row-add {
+  padding: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  text-align: center;
+  color: #158bff;
+  font-size: 18px;
+  background: white;
+}
+.content-select {
+  height: 60vh;
+  overflow-y: scroll;
+}
+.green {
+  color: green;
+}
+.orange {
+  color: orange;
+}
+.button-submit {
+  background: white;
+  position: fixed;
+  bottom: 0;
+  width: 96vw;
+  padding: 2vw;
+  margin-top: 2vw;
+}
+.button-shenhe {
+  height: 100%;
+  padding: 3px 10px;
+}
+
+// 审核页
+.row-examine-button {
+  position: fixed;
+  bottom: 0px;
+  padding: 2vw;
+  overflow: hidden;
+  display: block;
+  .button-left {
+    color: white;
+    float: left;
+    width: 48vw;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: linear-gradient(to right, #ffcb1d, #ff8b16);
+  }
+  .button-right {
+    color: white;
+    float: left;
+    width: 48vw;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: linear-gradient(to right, #07c160, #07c160);
+  }
+}
+
+.asset-sidebar {
+  float: left;
+  width: 27vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prop-content {
+  float: left;
+  width: 73vw;
+}
